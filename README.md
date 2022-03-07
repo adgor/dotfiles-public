@@ -1,5 +1,4 @@
 # Johnny @ thecode
----
 
 ## Windows 10 & 11
 
@@ -11,7 +10,7 @@
 1. Make a user profile and set comman aliases
 The first step in creating your own profile is to test if you already have a profile. Open PowerShell and type:  
 `test-path $profile` 
-If it returns False, then we need to create the profile first, type: 
+If it returns False, then we need to create the profile first, type:  
 `New-Item -Path $profile -Type File -Force`  
 and then set nvim $PROFILE.CurrentUserCurrentHost  
 `. $env:USERPROFILE\.config\powershell\user_profile.ps1`  
