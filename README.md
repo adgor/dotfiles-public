@@ -15,6 +15,8 @@ If it returns False, then we need to create the profile first, type:
 and then set nvim $PROFILE.CurrentUserCurrentHost  
 `. $env:USERPROFILE\.config\powershell\user_profile.ps1` 
 1. Install [Spaceship](https://github.com/spaceship-prompt/spaceship-prompt) as a prompt.
-1. Install: Terminal-Icons; z; PSReadLine; Fzf; 
-
-
+1. Install: 
+[Terminal Icons](https://github.com/devblackops/Terminal-Icons) - Folder and file icons
+[PSReadLine](https://docs.microsoft.com/en-us/powershell/module/psreadline/?view=powershell-7.2) - Cmdlets for customizing the editing environment, used for autocompletion
+[z](https://www.powershellgallery.com/packages/z/1.1.13) - Directory jumper
+[PSFzf](https://github.com/kelleyma49/PSFzf) - Fuzzy finder
