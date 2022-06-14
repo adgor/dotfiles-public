@@ -1,3 +1,6 @@
+# for missing commands like npm
+source /home/johnny/.bash_profile
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -12,10 +15,22 @@ compinit
 # End of lines added by compinstall
 #
 # Alias
-alias vim="nvim"
+alias ll="ls -la"
+alias v="nvim"
 alias cls="clear"
 alias g="git"
+alias t="tmux -u"
 #
+
+# theme/plugins
+source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ./.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ./.config/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+# history substring search options
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
 ########################################
 # This Always mus be THE END LINE ######
 # ######################################
