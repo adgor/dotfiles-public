@@ -1,5 +1,5 @@
 # for missing commands like npm
-source /home/johnny/.bash_profile
+#source /home/johnny/.bash_profile
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -19,13 +19,19 @@ alias ll="ls -la"
 alias v="nvim"
 alias cls="clear"
 alias g="git"
+alias cmm='git add -A; git commit -m'
 alias t="tmux -u"
 #
 
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # theme/plugins
 source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ./.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ./.config/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
+source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.config/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 # history substring search options
 bindkey '^[[A' history-substring-search-up
@@ -36,4 +42,5 @@ bindkey '^[[B' history-substring-search-down
 # ######################################
 #
 eval "$(starship init zsh)"
+
 
