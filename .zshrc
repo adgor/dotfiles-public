@@ -20,6 +20,7 @@ alias v="nvim"
 alias cls="clear"
 alias g="git"
 alias cmm='git add -A; git commit -m'
+alias gp="git push"
 alias t="tmux -u"
 #
 
