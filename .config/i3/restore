@@ -5,5 +5,3 @@ for layout in ~/.config/i3/layouts/*; do
 done
 
 (brave &)  
-(alacritty &)
-(anydesk &)

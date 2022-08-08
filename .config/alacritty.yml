@@ -1,0 +1,66 @@
+window:
+  padding:
+    x: 6
+    y: 6
+
+  opacity: 0.85
+
+# Font configuration
+font:
+  normal:
+    family: Hack Nerd Font
+    style: Regular
+  bold:
+    family: Hack Nerd Font
+    style: Bold
+  italic:
+    family: Hack Nerd Font
+    style: Italic
+  bolditalic:
+    family: Hack Nerd Font
+    style: Bold Italic
+
+  # Point size
+  size: 12.0
+# Colors (Cobalt 2)
+colors:
+  cursor:
+    text: '#fefff2'
+    cursor: '#f0cc09'
+
+  selection:
+    text: '#b5b5b5'
+    background: '#18354f'
+
+  primary:
+    background: '#132738'
+    foreground: '#ffffff'
+
+  normal:
+    black:   '#000000'
+    red:     '#ff0000'
+    green:   '#38de21'
+    yellow:  '#ffe50a'
+    blue:    '#1460d2'
+    magenta: '#ff005d'
+    cyan:    '#00bbbb'
+    white:   '#bbbbbb'
+
+  bright:
+    black:   '#555555'
+    red:     '#f40e17'
+    green:   '#3bd01d'
+    yellow:  '#edc809'
+    blue:    '#5555ff'
+    magenta: '#ff55ff'
+    cyan:    '#6ae3fa'
+    white:   '#ffffff'
+      
+cursor:
+  # Cursor style
+  style:
+    shape: Beam
+
+    blinking: On
+shell:
+  program: /bin/zsh

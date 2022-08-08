@@ -13,6 +13,35 @@ zstyle :compinstall filename '/home/johnny/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+# add ~/.emacs.d/bin to your PATH!
+export PATH="$HOME/.emacs.d/bin:$PATH"
+
+#
+# # ex - archive extractor
+# # usage: ex <file>
+ex ()
+{
+  if [ -f $1 ] ; then
+    case $1 in
+      *.tar.bz2)   tar xjf $1   ;;
+      *.tar.gz)    tar xzf $1   ;;
+      *.tar.xz)    tar xJf $1   ;;
+      *.bz2)       bunzip2 $1   ;;
+      *.rar)       unrar x $1     ;;
+      *.gz)        gunzip $1    ;;
+      *.tar)       tar xf $1    ;;
+      *.tbz2)      tar xjf $1   ;;
+      *.tgz)       tar xzf $1   ;;
+      *.zip)       unzip $1     ;;
+      *.Z)         uncompress $1;;
+      *.7z)        7z x $1      ;;
+      *)           echo "'$1' cannot be extracted via ex()" ;;
+    esac
+  else
+    echo "'$1' is not a valid file"
+  fi
+}
 #
 # Alias
 alias ll="ls -la"
@@ -22,6 +51,8 @@ alias g="git"
 alias cmm='git add -A; git commit -m'
 alias gp="git push"
 alias t="tmux -u"
+alias em="emacsclient -c -a 'emacs'"
+alias pa="paru"
 #
 
 # NVM
