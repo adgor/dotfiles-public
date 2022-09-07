@@ -74,11 +74,6 @@ _G.packer_plugins = {
     path = "/home/johnny/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
-  ["FixCursorHold.nvim"] = {
-    loaded = true,
-    path = "/home/johnny/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim",
-    url = "https://github.com/antoinemadec/FixCursorHold.nvim"
-  },
   LuaSnip = {
     loaded = true,
     path = "/home/johnny/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -99,15 +94,15 @@ _G.packer_plugins = {
     path = "/home/johnny/.local/share/nvim/site/pack/packer/start/cmp-buffer",
     url = "https://github.com/hrsh7th/cmp-buffer"
   },
-  ["cmp-cmdline"] = {
-    loaded = true,
-    path = "/home/johnny/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
-    url = "https://github.com/hrsh7th/cmp-cmdline"
-  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/johnny/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-nvim-lua"] = {
+    loaded = true,
+    path = "/home/johnny/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua",
+    url = "https://github.com/hrsh7th/cmp-nvim-lua"
   },
   ["cmp-path"] = {
     loaded = true,
@@ -119,15 +114,10 @@ _G.packer_plugins = {
     path = "/home/johnny/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["cobalt2.nvim"] = {
+  ["darkplus.nvim"] = {
     loaded = true,
-    path = "/home/johnny/.local/share/nvim/site/pack/packer/start/cobalt2.nvim",
-    url = "https://github.com/lalitmee/cobalt2.nvim"
-  },
-  ["colorbuddy.nvim"] = {
-    loaded = true,
-    path = "/home/johnny/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
-    url = "https://github.com/tjdevries/colorbuddy.nvim"
+    path = "/home/johnny/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
+    url = "https://github.com/lunarvim/darkplus.nvim"
   },
   ["friendly-snippets"] = {
     loaded = true,
@@ -153,11 +143,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/johnny/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
-  },
-  ["nlsp-settings.nvim"] = {
-    loaded = true,
-    path = "/home/johnny/.local/share/nvim/site/pack/packer/start/nlsp-settings.nvim",
-    url = "https://github.com/tamago324/nlsp-settings.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -214,11 +199,6 @@ _G.packer_plugins = {
     path = "/home/johnny/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["popup.nvim"] = {
-    loaded = true,
-    path = "/home/johnny/.local/share/nvim/site/pack/packer/start/popup.nvim",
-    url = "https://github.com/nvim-lua/popup.nvim"
-  },
   ["project.nvim"] = {
     loaded = true,
     path = "/home/johnny/.local/share/nvim/site/pack/packer/start/project.nvim",
@@ -233,6 +213,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/johnny/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/home/johnny/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["vim-astro"] = {
+    loaded = true,
+    path = "/home/johnny/.local/share/nvim/site/pack/packer/start/vim-astro",
+    url = "https://github.com/wuelnerdotexe/vim-astro"
   },
   ["vim-bbye"] = {
     loaded = true,

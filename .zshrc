@@ -44,7 +44,9 @@ ex ()
 }
 #
 # Alias
-alias ll="ls -la"
+alias ls="exa"
+alias ll="exa -alh"
+alias tree="exa -T --git-ignore"
 alias v="nvim"
 alias cls="clear"
 alias g="git"

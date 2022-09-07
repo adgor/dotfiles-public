@@ -40,7 +40,7 @@ keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 -- Insert --
--- Press jk fast to enter
+-- Press jk fast to exit insert mode 
 keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --
@@ -70,4 +70,3 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- add by me 
 keymap('n', '<c-s>', ':w<CR>', {})
 keymap('i', '<c-s>', '<Esc>:w<CR>a', {})
-
