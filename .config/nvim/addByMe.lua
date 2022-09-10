@@ -7,11 +7,15 @@ keymap('i', '<c-s>', '<Esc>:w<CR>a', {})
 relativenumber = true,
 wrap = true
 
+-- fold 
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 
 -- plugins.lua
 -- use "lunarvim/darkplus.nvim"
   use { 'lalitmee/cobalt2.nvim', requires = 'tjdevries/colorbuddy.nvim' }
-
+  use { 'iamcco/markdown-preview.nvim', ft = 'markdown', run = 'cd app && yarn install', cmd = {'MarkdownPreview'} }
+  use "ap/vim-css-color"
   
 -- colorscheme.lua
 
