@@ -193,8 +193,12 @@ bindsym $mod+r mode "resize"
 ##########
 bindsym $mod+Return exec alacritty
 bindsym $mod+b exec brave
+bindsym $mod+m exec min
 bindsym $mod+shift+c exec code
+bindsym $mod+shift+p exec discord
 bindsym $mod+shift+f exec firefox
+bindsym $mod+shift+a exec anydesk
+bindsym $mod+shift+n exec notion-app
 bindsym $mod+n exec nemo
 
 # remove titel bar
@@ -228,6 +232,7 @@ hide_edge_borders smart
 
 # assign app to open in a specific dir
 assign [class="^Code$" instance="^code$"] 1
+assign [class="^notion-app$" instance="^notion-app$"] 5
 assign [class="^Anydesk$" instance="^anydesk$"] 6
 assign [class="^discord$" instance="^discord$"] 7
 assign [class="^Viber$" instance="^viber$"] 9

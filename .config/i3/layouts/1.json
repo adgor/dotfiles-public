@@ -1,26 +1,84 @@
 // vim:ts=4:sw=4:et
 {
+    // tabbed split container with 3 children
     "border": "pixel",
-    "current_border_width": 1,
     "floating": "auto_off",
-    "geometry": {
-       "height": 1023,
-       "width": 1279,
-       "x": 1280,
-       "y": 0
-    },
+    "layout": "tabbed",
     "marks": [],
-    "name": "New Tab - Brave",
     "percent": 1,
-    "swallows": [
-       {
-        "class": "^Brave\\-browser$",
-        "instance": "^brave\\-browser$",
-        "machine": "^thecode$",
-        "title": "^New\\ Tab\\ \\-\\ Brave$",
-        "window_role": "^browser$"
-       }
-    ],
-    "type": "con"
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1004,
+               "width": 638,
+               "x": 1920,
+               "y": 18
+            },
+            "marks": [],
+            "name": "i3wm restore applications on login - YouTube - Brave",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+               // "class": "^Brave\\-browser$",
+               // "instance": "^brave\\-browser$",
+               // "machine": "^thecode$",
+               // "title": "^i3wm\\ restore\\ applications\\ on\\ login\\ \\-\\ YouTube\\ \\-\\ Brave$",
+               // "window_role": "^browser$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 986,
+               "width": 1280,
+               "x": 0,
+               "y": 38
+            },
+            "marks": [],
+            "name": "Course Resources | See All",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+               // "class": "^notion\\-app$",
+               // "instance": "^notion\\-app$",
+               // "machine": "^thecode$",
+               // "title": "^Course\\ Resources\\ \\|\\ See\\ All$",
+               // "window_role": "^browser\\-window$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 600,
+               "width": 800,
+               "x": 0,
+               "y": 0
+            },
+            "marks": [],
+            "name": "Alacritty",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+               // "class": "^Alacritty$",
+               // "instance": "^Alacritty$",
+               // "machine": "^thecode$",
+               // "title": "^Alacritty$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
 }
 
