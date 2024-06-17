@@ -44,14 +44,26 @@ ex ()
 }
 #
 # Alias
+alias q="exit"
+alias sc="source"
+alias dc="docker"
+alias cls="clear"
+alias cs="clear"
+alias cl="clear"
+alias pm="pnpm"
+alias pmd="pnpm run dev"
 alias ls="exa"
 alias ll="exa -alh"
-alias tree="exa -T --git-ignore"
+# alias tree="exa -T --git-ignore"
+alias tree="exa --tree --level=2"
 alias v="nvim"
-alias cls="clear"
 alias g="git"
+alias c="code"
 alias cmm='git add -A; git commit -m'
 alias gp="git push"
+alias gpl="git pull"
+alias gst="git status"
+alias cpwd="pwd | xclip -selection clipboard"
 alias t="tmux -u"
 alias em="emacsclient -c -a 'emacs'"
 alias pa="paru"
@@ -78,3 +90,18 @@ bindkey '^[[B' history-substring-search-down
 eval "$(starship init zsh)"
 
 
+
+# pnpm
+export PNPM_HOME="/home/johnny/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+
+#lvim
+export PATH=/home/johnny/.local/bin:$PATH
+
+# bun completions
+[ -s "/home/johnny/.bun/_bun" ] && source "/home/johnny/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
